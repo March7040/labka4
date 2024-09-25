@@ -1,0 +1,2 @@
+# labka4
+laboratorna
