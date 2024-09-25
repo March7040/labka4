@@ -1,0 +1,42 @@
+html,
+body {
+	height: 100%;	
+}
+
+body {
+	background: #111;
+	background: radial-gradient( #222, #111 );
+	overflow: hidden;
+}
+
+div {
+	background: tomato;
+	border-radius: 50%;
+	height: 200px;
+	position: relative;
+	transition: background 300ms;
+	width: 200px;
+}
+
+div:after {
+	/*background: rgba(255, 255, 255, 0.1);*/
+	bottom: -30px;
+	content: '';
+	left: -30px;
+	position: absolute;
+	right: -30px;
+	top: -30px;
+}
+
+div:hover {
+	background: #fff;
+	cursor: move;
+	cursor: -webkit-grab;
+}
+
+div:active {
+	background: dodgerblue;
+	cursor: move;
+	cursor: -webkit-grabbing;
+	transition-duration: 100ms;
+}
